@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Store Seller's Dashboard</title>
+ <style>
+body{
+    background-color: rgba(232, 235, 237, 0.742);
+}
+
+.main{
+    text-align: center;
+    color: rgb(230, 52, 2);
+}
+
+form label{
+    display: inline-block;
+    width: 100px;
+}
+#butt{
+    text-align: center;
+    
+}
+form{
+    height: 60px;
+    width: 40px;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Seller Dashboard</h1>
+    </div>
+    <form action="/items" method="post" id="inventory-items_form">
+
+     <label for="name">Item-Name :</label>
+     <input type="text" id="name"  required><br>
+
+     <label for="description">Description :</label>
+     <input type="text" id="description" required><br>
+     
+     <label for="price">Price :</label>
+     <input type="number" id="price" required><br>
+
+     <label for="quantity"> Quantity :</label>
+     <input type="text" id="quantity" required><br><br>
+
+     <input type="submit" class="btn" id="butt" value="Add Item">
+
+    </form>
+    <script src="inventory.js"></script>
+</body>
+</html>
